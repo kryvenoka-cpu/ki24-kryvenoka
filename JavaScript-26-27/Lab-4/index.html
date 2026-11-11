@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JavaScript Basics Quiz</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
+  >
+</head>
+<body class="bg-body-tertiary">
+  <main class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="card border-0 shadow-sm">
+          <div class="card-body p-4 p-md-5">
+            <header class="mb-4">
+              <span id="question-count" class="badge text-bg-primary mb-2"></span>
+              <h1 class="display-6 fw-bold">JavaScript Basics Quiz</h1>
+              <p class="text-secondary mb-0">
+                Choose one answer for each question, then submit your answers.
+              </p>
+            </header>
+
+            <form id="quiz-form" novalidate>
+              <div id="quiz-questions"></div>
+              <div id="quiz-message" class="alert alert-warning d-none" role="alert"></div>
+              <button type="submit" class="btn btn-primary btn-lg w-100" disabled>
+                Submit answers
+              </button>
+              <button type="button" id="retry-button" class="btn btn-outline-secondary btn-lg w-100 mt-2">
+                Retry
+              </button>
+              <div id="quiz-result" class="alert alert-info mt-3 mb-0 d-none" role="status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="quiz-api.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
